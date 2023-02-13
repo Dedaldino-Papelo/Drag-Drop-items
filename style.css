@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(235, 21%, 11%);;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+.main{
+    width: 500px;
+}
+.header{
+    background-image: url('./images/bg-desktop-dark.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.header-content h1{
+    color: #fff;
+    letter-spacing: 0.67rem;
+    font-size: 3em;
+}
+.header-content img{
+    height: 34px;
+    cursor: pointer;
+}
+
+.form{
+    margin-top: 40px;
+}
+.form .input-text{
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    color: hsl(234, 39%, 85%) ;
+}
+.form .input-text::placeholder{
+    color: hsl(234, 39%, 85%);
+}
+
+.todo{
+    background-color: hsl(235, 24%, 19%) ;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+.todo-item p{
+    color: hsl(234, 39%, 85%);
+}
+.todo-item button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(233, 14%, 35%);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.hr{
+    width: 100%;
+    background: hsl(233, 14%, 35%);
+    height: 0.9px;
+}
