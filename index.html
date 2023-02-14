@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag & Drop</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,27 +22,32 @@
             </div>
         </header>
         <section class="todo main">
-            <div class="todo-item">
+            <div class="todo-item" draggable="true">
                <div class="check"><img src="./images/icon-check.svg" alt=""></div>
                 <p>Complete Online Javascript Course</p>
                 <button><img src="./images/icon-cross.svg" alt=""></button>
             </div>
-            <div class="hr"></div>
 
-            <div class="todo-item">
+            <div class="todo-item" draggable="true">
                 <div class="check"><img src="./images/icon-check.svg" alt=""></div>
-                 <p>Complete Online Javascript Course</p>
+                 <p>Pick up Groceries</p>
                  <button><img src="./images/icon-cross.svg" alt=""></button>
              </div>
-             <div class="hr"></div>
 
-             <div class="todo-item">
+             <div class="todo-item" draggable="true">
                 <div class="check"><img src="./images/icon-check.svg" alt=""></div>
-                 <p>Complete Online Javascript Course</p>
+                 <p>Jog around the park 3x</p>
                  <button><img src="./images/icon-cross.svg" alt=""></button>
              </div>
-             <div class="hr"></div>
+
+             <div class="todo-item" draggable="true">
+                <div class="check"><img src="./images/icon-check.svg" alt=""></div>
+                 <p>10 Minutes Meditation</p>
+                 <button><img src="./images/icon-cross.svg" alt=""></button>
+             </div>
         </section>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
